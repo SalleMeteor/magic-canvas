@@ -1,0 +1,47 @@
+<template name="canvas">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Magic Canvas is still evolving...</h3>
+    </div>
+    <div class="panel-body">
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+      CANVAS<br>
+    </div>
+  </div>
+    <h3>
+      Type your magic command: 
+    </h3>
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon">%</span>
+      <input id="command" type="text" placeholder="What's your command?" class="form-control"/>
+      <span class="input-group-btn">
+        <button id="button" class="btn btn-default" type="button">Execute!</button>
+      </span>
+    </div>
+      <!--<input id="button" class="btn btn-primary btn-lg" type="button" value="Execute" />-->
+  <h3>
+    Your last magic commands:
+  </h3>
+  {{> commands}}
+ 
+</template>
+
+<template name="commands">
+  <ul>
+    {{#each command}}
+    <li>@{{created_at}}: {{name}}</li>
+    {{/each}}
+  </ul>
+</template>

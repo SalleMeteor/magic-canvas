@@ -1,0 +1,13 @@
+<template name="home">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Magic Canvas </a>
+      {{> loginButtons}}
+    </div>
+  </nav>
+  {{#if currentUser}}
+  {{> canvas}}
+  {{else}}
+  <p>Want to join the Magic Canvas? Log in! :)</p>
+  {{/if}}
+</template>
