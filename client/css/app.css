@@ -1,1 +1,11 @@
 /* CSS declarations go here */
+
+.textHolder{
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 300px);
+  font-family: "Arial";
+  font-size: 30px;
+  color: #C9E4F2;
+  overflow : hidden;
+}
