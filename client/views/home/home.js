@@ -1,7 +1,13 @@
 Template.home.created = function(){
-  Meteor.subscribe("allCommands");
+  subscriptionHandle=Meteor.subscribe("allCommands");
 }
 
+
+Template.home.subscriptionReady=function(){
+    // the handle has a special "ready" method, which is a reactive data source
+    // it indicates if the data provided by the publication has made its way to the client
+    return subscriptionHandle.ready();
+};
 /*if (Meteor.isClient) {
   Template.hello.greeting = function () {
     return "Welcome to app.";

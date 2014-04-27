@@ -1,13 +1,16 @@
 <template name="home">
   <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Magic Canvas </a>
-      {{> loginButtons}}
+    <div class="container-fluid" style="text-align: center">
+      <h1 class="navbar-brand" style="float: center" href="#">Welcome to the Magic Canvas !! </h1>
+      
     </div>
   </nav>
   {{#if currentUser}}
-  {{> canvas}}
+    {{> loginButtons}}
+    {{#if subscriptionReady}}
+        {{> canvas}}
+    {{/if}}
   {{else}}
-  <p>Want to join the Magic Canvas? Log in! :)</p>
+  <p>Want to join the Magic Canvas? {{> loginButtons}} :)</p>
   {{/if}}
 </template>
