@@ -5,9 +5,9 @@ Every user has its own list of executed commands but has access to the world-mad
 
 Commands:
 
-'circle' or 'rectangle' + color to draw shapes.
-Any other text to write it behind.
-The "magic command"
+1. 'circle' or 'rectangle' + color to draw shapes.
+2. Any other text to write it behind.
+3. The "magic command": %
 
 EX:
 
@@ -19,8 +19,8 @@ EX:
  - Marc and Sandra create this!
  - I can write whatever I like
 
-
 And if you type % something special will happen... try it yourself!
+
 
 Members:
 Marc Nájera Beltrán
