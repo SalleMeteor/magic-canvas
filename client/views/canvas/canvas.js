@@ -103,7 +103,7 @@ Template.canvas.events({
         if (error) {
           console.log(error.message);
         } else {
-        
+          document.getElementById('command').value='';
           var query = Commands.find({}, {sort:{created_at:-1}, limit: 200}).fetch();
           loadCanvas(query);
         }
