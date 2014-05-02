@@ -5,14 +5,14 @@ Magic Canvas is a creative web application that allows users to work on the same
 Every user has its own list of executed commands but has access to the world-made canvas.
 
 Commands:
-=========
+---------
 
 1. 'circle' or 'rectangle' + color to draw shapes.
 2. Any other text to write it behind.
 3. The "magic command": %
 
-EX:
-===
+Some examples
+---
 
  - green rectangle
  - rect blue
@@ -25,10 +25,12 @@ And if you type % something special will happen... try it yourself!
 
 
 Members:
+========
 - Marc Nájera Beltrán
 - Sandra Lara Castillo
 
-- List of packages:
+List of packages:
+=================
 - account-base
 - account-ui
 - account-password
